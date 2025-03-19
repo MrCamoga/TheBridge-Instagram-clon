@@ -8,54 +8,56 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <aside>
-            <a href="index.html">Instagram</a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Reels</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="#">Create</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">More</a></li>
-            </ul>
+        <aside id="sidenav">
+            <nav>
+                <ul>
+                    <li id="logo"><a href="index.html"><img src="img/icons/logo.svg"></a></li>
+                    <li><a class="icon icon-home" href="#">Home</a></li>
+                    <li><a class="icon icon-search" href="#">Search</a></li>
+                    <li><a class="icon icon-explore" href="#">Explore</a></li>
+                    <li><a class="icon icon-reels2" href="#">Reels</a></li>
+                    <li><a class="icon icon-messages" href="#">Messages</a></li>
+                    <li><a class="icon icon-notifications" href="#">Notifications</a></li>
+                    <li><a class="icon icon-create" href="#">Create</a></li>
+                    <li><a class="icon icon-profile" href="#">Profile</a></li>
+                    <li><a class="icon icon-more" href="#">More</a></li>
+                </ul>
+            </nav>
         </aside>
         <main>
             <div id="profile-header">
                 <div id="profile-info">
                     <img src="img/media/image2.jfif">
-                    <div>
-                        <div>
+                    <div id="profile-info-right">
+                        <div class="info-title">
                             <h1>terrylucas</h1>
-                            <button>Follow</button>
+                            <button type="submit">Follow</button>
                             <a href="javascript:void(0)" class="icon icon-settings"></a>
                         </div>
-                        <div>
-                            <span>1.258 posts</span>
-                            <span>4M followers</span>
-                            <span>1.250 following</span>
+                        <div class="info-tags">
+                            <span><b>1.258</b> posts</span>
+                            <span><b>4M</b> followers</span>
+                            <span><b>1.250</b> following</span>
                         </div>
-                        <div><b>Terry Lucas</b></div>
+                        <b>Terry Lucas</b>
                     </div>
                 </div>
                 <div id="profile-stories-container"> <!-- Stories-->
                     <a class="profile-story" href="">
                         <img src="img/media/image2.jfif">
-                        <span>Made Us</span>
+                        Made Us
                     </a>
                     <a class="profile-story" href="">
                         <img src="img/media/image3.jfif">
-                        <span>Lorem ipsum</span>
+                        Lorem ipsum
                     </a>
                     <a class="profile-story" href="">
                         <img src="img/media/image4.jfif">
-                        <span>Lorem ipsum</span>
+                        Lorem ipsum
                     </a>
                     <a class="profile-story" href="">
                         <img src="img/media/image5.jfif">
-                        <span>Lorem ipsum</span>
+                        Lorem ipsum
                     </a>
                 </div>
             </div>

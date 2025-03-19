@@ -3,6 +3,8 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Segoe UI";
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -13,8 +15,26 @@ body {
 
 main {
     max-width: 935px;
-    font-family: "Segoe UI";
     margin-top: 20px;
+}
+
+#sidenav {
+    width: 200px;
+    margin-top: 40px;
+    #logo {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    a {
+        color: #262626;
+        font-family: "Roboto";
+    }
 }
 
 #toggle-nav {
@@ -22,7 +42,6 @@ main {
         border-top: 1px solid #e0e0e0;
         display: flex;
         justify-content: space-between;
-        list-style: none;
         font-weight: 600;
         font-size: 12px;
         padding-left: 130px;
@@ -35,21 +54,53 @@ main {
         }
         a {
             color: #8E8E8E;
-            text-decoration: none;
             padding: 15px;
             &.active {
                 color: #262626;
             }
         }
     }
+    
+    .icon::before {
+        width: 12px;
+        height: 12px;
+    }
 }
 
 #profile-header {
     display: flex;
     flex-direction: column;
+    padding: 60px;
+    gap: 60px;
     & > div {
         display: flex;
         flex-direction: row;
+    }
+
+    #profile-info {
+        gap: 100px;
+        align-items: center;
+    }
+
+    #profile-info-right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        & > div {
+            display: flex;
+            flex-direction: row;
+        }
+        .info-title {
+            gap: 15px;
+            align-items: center;
+        }
+        .info-tags  {
+            gap: 30px;
+        }
+    }
+
+    #profile-stories-container {
+        gap: 60px;
     }
 
     img {
@@ -61,17 +112,21 @@ main {
 .profile-story {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    gap: 15px;
     img {
         width: 67px;
     }
+    font-size: 14px;
+    color: #262626;
+    font-weight: 600;
 }
 
 .icon::before {
     content: "";
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
     background-repeat: no-repeat;
     padding-right: 5px;
 }
@@ -84,6 +139,18 @@ main {
 .thumbnail-multiphoto::after { background-image: url("img/thumbnail-icons/carousel.svg"); }
 .thumbnail-video::after { background-image: url("img/thumbnail-icons/reels.svg"); }
 
+
+.icon-reels2::before { background-image: url("img/icons/reels2.svg"); }
+.icon-search::before { background-image: url("img/icons/search.svg"); }
+.icon-more::before { background-image: url("img/icons/more.svg"); }
+.icon-notifications::before { background-image: url("img/icons/notifications.svg"); }
+.icon-profile::before { background-image: url("img/icons/profilepic.png"); }
+.icon-create::before { background-image: url("img/icons/create.svg"); }
+.icon-messages::before { background-image: url("img/icons/messages.svg"); }
+.icon-explore::before { background-image: url("img/icons/explore.svg"); }
+.icon-home::before { background-image: url("img/icons/home.svg"); }
+.icon-settings::before { background-image: url("img/icons/settings.svg"); }
+
 button {
     background-color: #0095f6;
     padding: 5px 20px;
@@ -92,6 +159,7 @@ button {
     border: 0px;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 #posts {
@@ -133,13 +201,11 @@ footer {
 
     a, span, select {
         color: #8E8E8E;
-        text-decoration: none;
         font-size: 12px;
     }
     
     & > * {
         display: flex;
-        list-style: none;
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px 18px;
