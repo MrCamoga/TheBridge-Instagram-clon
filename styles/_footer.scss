@@ -1,0 +1,25 @@
+@import "_variables";
+footer {
+    padding: 20px 0px;
+    justify-content: center;
+
+    .footer-container {
+        gap: 20px;
+        & > * {
+            max-width: max-content;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px 18px;
+        }
+    }
+
+    a, span, select {
+        color: $basecolor;
+        font-size: 12px;
+    }
+    
+    select {
+        border: 0px;
+        justify-content: left;
+    }
+}

@@ -1,0 +1,18 @@
+@import "_variables";
+.nav {
+    width: 200px;
+    margin-top: 40px;
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        align-items: flex-start;
+        gap: 20px;
+    }
+    a {
+        color: $darkcolor;
+        font-family: "Roboto";
+        gap: 10px;
+    }
+}

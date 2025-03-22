@@ -5,13 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Profile</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <aside id="sidenav">
+        <aside class="nav">
             <nav>
-                <ul>
-                    <li id="logo"><a href="index.html"><img src="img/icons/logo.svg"></a></li>
+                <ul class="flexcol">
+                    <li class="logo"><a href="index.html"><img src="assets/images/icons/logo.svg"></a></li>
                     <li><a class="icon icon-home" href="#">Home</a></li>
                     <li><a class="icon icon-search" href="#">Search</a></li>
                     <li><a class="icon icon-explore" href="#">Explore</a></li>
@@ -25,16 +25,16 @@
             </nav>
         </aside>
         <main>
-            <div id="profile-header">
-                <div id="profile-info">
-                    <img src="img/media/image2.jfif">
-                    <div id="profile-info-right">
-                        <div class="info-title">
-                            <h1>terrylucas</h1>
+            <div class="profile-header flexcol">
+                    <div class="profile-info flexrow">
+                    <img src="assets/images/pictures/image2.jfif">
+                    <div class="profile-info-right flexcol">
+                        <div class="info-title flexrow">
+                            <h1 class="title-username">terrylucas</h1>
                             <button type="submit">Follow</button>
                             <a href="javascript:void(0)" class="icon icon-settings"></a>
                         </div>
-                        <div class="info-tags">
+                        <div class="info-tags flexrow">
                             <span><b>1.258</b> posts</span>
                             <span><b>4M</b> followers</span>
                             <span><b>1.250</b> following</span>
@@ -42,28 +42,28 @@
                         <b>Terry Lucas</b>
                     </div>
                 </div>
-                <div id="profile-stories-container"> <!-- Stories-->
+                <div class="profile-stories-container flexrow"> <!-- Stories-->
                     <a class="profile-story" href="">
-                        <img src="img/media/image2.jfif">
-                        Made Us
+                        <img src="assets/images/pictures/image2.jfif">
+                        <span>Made us</span>
                     </a>
                     <a class="profile-story" href="">
-                        <img src="img/media/image3.jfif">
-                        Lorem ipsum
+                        <img src="assets/images/pictures/image3.jfif">
+                        <span>Lorem ipsum dolor, sit amet</span>
                     </a>
                     <a class="profile-story" href="">
-                        <img src="img/media/image4.jfif">
-                        Lorem ipsum
+                        <img src="assets/images/pictures/image4.jfif">
+                        <span>Lorem ipsum dolor, sit amet</span>
                     </a>
                     <a class="profile-story" href="">
-                        <img src="img/media/image5.jfif">
-                        Lorem ipsum
+                        <img src="assets/images/pictures/image5.jfif">
+                        <span>Lorem ipsum dolor, sit amet</span>
                     </a>
                 </div>
             </div>
             <div><!-- Gallery -->
-                <nav id="toggle-nav">
-                    <ul>
+                <nav class="toggle-nav">
+                    <ul class="flexrow">
                         <li><a class="icon icon-posts active" href="javascript:void(0)">POSTS</a></li>
                         <li><a class="icon icon-guides" href="javascript:void(0)">GUIDES</a></li>
                         <li><a class="icon icon-reels" href="javascript:void(0)">REELS</a></li>
@@ -72,24 +72,24 @@
                     </ul>
                 </nav>
                 <section id="posts">
-                    <div class="thumbnail-icon thumbnail-multiphoto"><a href="javascript:void(0)"><img src="img/media/image1.jfif"></a></div>
-                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="img/media/image2.jfif"></a></div>
-                    <div><a href="javascript:void(0)"><img src="img/media/image3.jfif"></a></div>
-                    <div><a href="javascript:void(0)"><img src="img/media/image4.jfif"></a></div>
-                    <div><a href="javascript:void(0)"><img src="img/media/image5.jfif"></a></div>
-                    <div class="thumbnail-icon thumbnail-multiphoto"><a href="javascript:void(0)"><img src="img/media/image6.jfif"></a></div>
-                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="img/media/image7.jfif"></a></div>
-                    <div><a href="javascript:void(0)"><img src="img/media/image8.jfif"></a></div>
-                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="img/media/image9.jfif"></a></div>
-                    <div class="thumbnail-icon thumbnail-multiphoto"><a href="javascript:void(0)"><img src="img/media/image1.jfif"></a></div>
-                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="img/media/image2.jfif"></a></div>
-                    <div><a href="javascript:void(0)"><img src="img/media/image3.jfif"></a></div>
-                    <div><a href="javascript:void(0)"><img src="img/media/image4.jfif"></a></div>
-                    <div><a href="javascript:void(0)"><img src="img/media/image5.jfif"></a></div>
-                    <div class="thumbnail-icon thumbnail-multiphoto"><a href="javascript:void(0)"><img src="img/media/image6.jfif"></a></div>
-                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="img/media/image7.jfif"></a></div>
-                    <div><a href="javascript:void(0)"><img src="img/media/image8.jfif"></a></div>
-                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="img/media/image9.jfif"></a></div>
+                    <div class="thumbnail-icon thumbnail-multiphoto"><a href="javascript:void(0)"><img src="assets/images/pictures/image1.jfif"></a></div>
+                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="assets/images/pictures/image2.jfif"></a></div>
+                    <div><a href="javascript:void(0)"><img src="assets/images/pictures/image3.jfif"></a></div>
+                    <div><a href="javascript:void(0)"><img src="assets/images/pictures/image4.jfif"></a></div>
+                    <div><a href="javascript:void(0)"><img src="assets/images/pictures/image5.jfif"></a></div>
+                    <div class="thumbnail-icon thumbnail-multiphoto"><a href="javascript:void(0)"><img src="assets/images/pictures/image6.jfif"></a></div>
+                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="assets/images/pictures/image7.jfif"></a></div>
+                    <div><a href="javascript:void(0)"><img src="assets/images/pictures/image8.jfif"></a></div>
+                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="assets/images/pictures/image9.jfif"></a></div>
+                    <div class="thumbnail-icon thumbnail-multiphoto"><a href="javascript:void(0)"><img src="assets/images/pictures/image1.jfif"></a></div>
+                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="assets/images/pictures/image2.jfif"></a></div>
+                    <div><a href="javascript:void(0)"><img src="assets/images/pictures/image3.jfif"></a></div>
+                    <div><a href="javascript:void(0)"><img src="assets/images/pictures/image4.jfif"></a></div>
+                    <div><a href="javascript:void(0)"><img src="assets/images/pictures/image5.jfif"></a></div>
+                    <div class="thumbnail-icon thumbnail-multiphoto"><a href="javascript:void(0)"><img src="assets/images/pictures/image6.jfif"></a></div>
+                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="assets/images/pictures/image7.jfif"></a></div>
+                    <div><a href="javascript:void(0)"><img src="assets/images/pictures/image8.jfif"></a></div>
+                    <div class="thumbnail-icon thumbnail-video"><a href="javascript:void(0)"><img src="assets/images/pictures/image9.jfif"></a></div>
                 </section>
                 <section id="guides" class="hidden"></section>
                 <section id="reels"  class="hidden"></section>
@@ -97,27 +97,29 @@
                 <section id="tagged" class="hidden"></section>
             </div>
 
-            <footer>
-                <ul>
-                    <li><a href="javascript:void(0)">Meta</a></li>
-                    <li><a href="javascript:void(0)">About</a></li>
-                    <li><a href="javascript:void(0)">Blog</a></li>
-                    <li><a href="javascript:void(0)">Jobs</a></li>
-                    <li><a href="javascript:void(0)">Help</a></li>
-                    <li><a href="javascript:void(0)">API</a></li>
-                    <li><a href="javascript:void(0)">Privacy</a></li>
-                    <li><a href="javascript:void(0)">Terms</a></li>
-                    <li><a href="javascript:void(0)">Top Accounts</a></li>
-                    <li><a href="javascript:void(0)">Hashtags</a></li>
-                    <li><a href="javascript:void(0)">Locations</a></li>
-                    <li><a href="javascript:void(0)">Instagram Lite</a></li>
-                </ul>
-                <div>
-                    <select name="lang">
-                        <option value="es">Español</option>
-                        <option value="en" selected>English</option>
-                    </select>
-                    <span>© 2021 Instagram From Meta</span>
+            <footer class="flexrow">
+                <div class="footer-container flexcol">
+                    <ul class="flexrow">
+                        <li><a href="javascript:void(0)">Meta</a></li>
+                        <li><a href="javascript:void(0)">About</a></li>
+                        <li><a href="javascript:void(0)">Blog</a></li>
+                        <li><a href="javascript:void(0)">Jobs</a></li>
+                        <li><a href="javascript:void(0)">Help</a></li>
+                        <li><a href="javascript:void(0)">API</a></li>
+                        <li><a href="javascript:void(0)">Privacy</a></li>
+                        <li><a href="javascript:void(0)">Terms</a></li>
+                        <li><a href="javascript:void(0)">Top Accounts</a></li>
+                        <li><a href="javascript:void(0)">Hashtags</a></li>
+                        <li><a href="javascript:void(0)">Locations</a></li>
+                        <li><a href="javascript:void(0)">Instagram Lite</a></li>
+                    </ul>
+                    <div class="flexrow">
+                        <select name="lang">
+                            <option value="es">Español</option>
+                            <option value="en" selected>English</option>
+                        </select>
+                        <span>© 2021 Instagram From Meta</span>
+                    </div>
                 </div>
             </footer>
         </main>

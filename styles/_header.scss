@@ -1,0 +1,55 @@
+@import "_variables";
+.profile-header {
+    gap: 100px;
+    align-items: center;
+    margin: 70px;
+    gap: 60px;
+    align-items: flex-start;
+    img {
+        border-radius: 50%;
+        max-width: 200px;
+    }
+}
+
+.profile-info {
+    gap: 60px;
+    align-items: center;
+
+    .profile-info-right {
+        gap: 20px;
+        .info-title {
+            gap: 15px;
+            align-items: center;
+        }
+        .info-tags  {
+            gap: 30px;
+        }
+    }
+}
+
+.title-username {
+    font-size: 28px;
+    font-weight: 350;
+    color: $darkcolor;
+}
+
+.profile-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 25px;
+    img {
+        width: 67px;
+    }
+    font-size: 14px;
+    color: $darkcolor;
+    font-weight: 600;
+    span {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 80px;
+    }
+}
