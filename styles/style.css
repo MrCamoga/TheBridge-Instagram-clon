@@ -55,13 +55,14 @@
 .nav {
   width: 200px;
   margin-top: 40px;
+  font-size: 16px;
 }
 .nav .logo {
   margin-bottom: 20px;
 }
 .nav ul {
   align-items: flex-start;
-  gap: 20px;
+  gap: 2em;
 }
 .nav a {
   color: #262626;
@@ -129,7 +130,7 @@ main {
 }
 .toggle-nav ul a {
   color: #8E8E8E;
-  padding: 15px;
+  padding: 1.5em;
 }
 .toggle-nav ul a.active {
   color: #262626;
