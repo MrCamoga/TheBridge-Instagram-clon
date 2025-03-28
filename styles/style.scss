@@ -14,8 +14,8 @@ b {
 }
 
 body {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     justify-content: center;
 }
 
